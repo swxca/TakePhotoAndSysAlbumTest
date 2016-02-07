@@ -109,6 +109,14 @@ public class MainActivity extends AppCompatActivity {
 //                    intent.putExtra("outputY", outputY);
                     //intent.putExtra("noFaceDetection", true);
                    // intent.putExtra("return-data", false);
+                    // aspectX aspectY 是宽高的比例
+                    intent.putExtra("aspectX", 1);
+                    intent.putExtra("aspectY", 1);
+
+                    // outputX,outputY 是剪裁图片的宽高
+                    intent.putExtra("outputX", 150);
+                    intent.putExtra("outputY", 150);
+                    intent.putExtra("return-data", true);
                     //指定裁剪后的输出位置
                  //   intent.putExtra(MediaStore.EXTRA_OUTPUT, CutSaveImage);
                     //裁剪完成后会继续回调这个onActivityResult那么判断,请求码为CROP_PHOTO
